@@ -1,0 +1,42 @@
+import math as m
+pi = 3.14159
+def calculateAngle(NoBlades):
+    angle = 360/NoBlades
+    print("The angle of the propeller is : ", angle)
+
+#
+#
+#
+#NoBlades = int(input("Please enter the number of blades your propeller has : "))
+#calculateAngle(NoBlades)
+
+
+def calculateArchWidth(length,number):
+    width = length/number
+    print("The width of an arch is : ", width)
+
+length = float(input("Please etner the length of the viaduct : "))
+number = int(input("Please enter the number of arches : "))
+calculateArchWidth(length,number)
+#
+#
+#
+def calculatePercentSlope(delta_x, delta_h):
+    percentSlope = delta_h/delta_x * 100
+    print("The total is : % ", percentSlope)
+
+
+#delta_x = int(input("Please enter the value for delta_x : "))
+#delta_h = int(input("Please enter the value for delta_h : "))
+#calculatePercentSlope(delta_x,delta_h)
+
+def calculateArcLength(arc_len, arc_height):
+    radiusone = arc_height / 2
+    radiustwo = (arc_len * arc_len) / (8* arc_height)
+    total_radius = radiusone + radiustwo
+    print(total_radius)
+    theta = 2 * sin^-1 (arc_len/total_radius * 2)
+    print(theta)
+#arc_len = int(input("Please enter the length of the arc : "))
+#arc_height = int(input("Please enter the height of the arc : "))
+#calculateArcLength(arc_len, arc_height)
